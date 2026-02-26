@@ -1,3 +1,10 @@
-<nav>
-  <a *ngFor="let link of links" [routerLink]="[link.split(' ')[0]]">{{ link }}</a>
+<nav class="flex flex-row w-100% justify-items-start gap-7 my-[2em]">
+  @for (link of links; track link){
+    <a
+    [routerLink]="link.path"
+    [routerLinkActiveOptions]="{ exact: link.exact} "
+    routerLinkActive="text-orange-600"
+    class="flex items-center  cursor-pointer text-orange-400 hover:text-orange-600 transition-colors "
+    >{{ link.title }}</a>
+  }
 </nav>
