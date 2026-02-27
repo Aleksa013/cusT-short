@@ -43,6 +43,15 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'address' => 'array',
         ];
+    }
+
+    public function testimonial() {
+        return $this->hasMany(Testimonial::class);
+    }
+
+    public function design() {
+        return $this->hasMany(Design::class);
     }
 }
