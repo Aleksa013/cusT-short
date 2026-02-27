@@ -1,10 +1,10 @@
-<nav class="flex flex-row w-100% justify-items-start gap-7 my-[2em]">
+<nav class="flex flex-row w-100% justify-items-start gap-7 my-[2em] mr-[30%]">
   @for (link of links; track link){
     <a
     [routerLink]="link.path"
     [routerLinkActiveOptions]="{ exact: link.exact} "
-    routerLinkActive="text-orange-600"
-    class="flex items-center  cursor-pointer text-orange-400 hover:text-orange-600 transition-colors "
+    routerLinkActive="text-orange-700"
+    class="w-28 flex items-center font-medium cursor-pointer text-orange-400 hover:text-orange-700 transition-colors "
     >{{ link.title }}</a>
   }
 </nav>
