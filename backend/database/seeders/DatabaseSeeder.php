@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         TShirt::factory(5)->create();
-        Design::factory(3)->create();
+        Design::factory(7)->create();
         Testimonial::factory(4)->create();
 
         // User::factory()->create([

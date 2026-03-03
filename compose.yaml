@@ -39,3 +39,5 @@ services:
     container_name: mysql-cust
     ports:
       - "3307:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql

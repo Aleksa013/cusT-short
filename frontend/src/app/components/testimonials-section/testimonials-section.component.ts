@@ -1,13 +1,14 @@
 import { Component , signal, WritableSignal } from '@angular/core';
 import { TestimonialsService } from '../../services/testimonials/testimonials.service';
 import { Testimonial } from '../../core/models/testimonial.model';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-testimonials-section',
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatCardModule, MatButtonModule],
   templateUrl: './testimonials-section.component.html',
   styleUrl: './testimonials-section.component.scss'
 })

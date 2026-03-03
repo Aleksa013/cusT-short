@@ -10,6 +10,8 @@ class Testimonial extends Model
     /** @use HasFactory<\Database\Factories\TestimonialFactory> */
     use HasFactory;
 
+    protected $table = 'testimonials';
+
     public function user() {
         return $this->belongsTo(User::class);
     }
